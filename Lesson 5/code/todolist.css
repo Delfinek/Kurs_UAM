@@ -17,12 +17,20 @@ body{
 .mainList > div{
 	width: calc(100% - 15px);
 	height: 2.5em;
-	background-color: rgb(66, 184, 221);
+	font-weight: bold;
+	color: white;
+	background-color: #0591C0;
 	border-top: 2px solid;
-
+	border-color: #000709;
 	padding-left: 15px;
 	vertical-align: middle;
 	line-height: 2.5em;
+}
+
+.mainList > div:hover{
+	background-color: #FFFFFF;
+	color: #0591C0;	
+	transition: all 200ms;
 }
 
 .bar{
@@ -38,10 +46,22 @@ body{
 
 #add_button{
 	width: 20%;
-	background-color: rgb(66, 184, 221);
+	font-weight: bold;
+	color: white;
+	background-color: #0591C0;
 	border: none;
     padding: 0px;
     height: 100%;
     margin: 0px;
+    cursor: pointer;
+}
 
+#add_button:hover {
+	font-weight: bold;
+	background-color: #FFFFFF;
+	color: #0591C0;	
+	border: inset 2px;
+	border-style: solid;
+	border-color: #0591C0;
+	transition: all 200ms;
 }
