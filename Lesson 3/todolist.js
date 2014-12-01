@@ -1,4 +1,4 @@
-var list_elements = []
+var list = []
 
 document.getElementById('add_button').addEventListener('click', function () {
 			var task = document.getElementById('new_element').value;

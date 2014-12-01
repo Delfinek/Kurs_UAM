@@ -1,13 +1,15 @@
 window.addEventListener('DOMContentLoaded', function () {
 	//After the page structure is loaded
 
+
 	var store = new UAM.Store();
 
-	var inputView = new UAM.InputView(document.querySelector('#inputview'));
-	var listView = new UAM.ListView(document.querySelector('#listview'));
-	var footerView = new UAM.FooterView(document.querySelector('#footerview'));
+	var inputView = new UAM.inputView(document.querySelector('#inputView'));
+	var listView = new UAM.listView(document.querySelector('#listView'));
+	var footerView = new UAM.footerView(document.querySelector('#footerView'));
+	
 
-	new InputCtrl(inputView, store);
-	new ListCtrl(listView, store);
-	new FooterCtrl(footerView, store);
+	var inputCtrl = new UAM.inputCtrl(inputView, store);
+	var listCtrl = new UAM.listCtrl(listView, store);
+	var footerCtrl = new UAM.footerCtrl(footerView, store);
 });

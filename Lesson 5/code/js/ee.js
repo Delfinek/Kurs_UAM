@@ -1,4 +1,5 @@
 (function (global) {
+	console.log(global);
 	var EE;
 
 	if (!global.UAM) {
